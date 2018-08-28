@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageClasssify</title>
+    <link href='./css/style.css' rel='stylesheet'>
+    <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+
+    <div class='wrapper'>
+        <h1>Image Classify</h1>
+        <div class='content'>
+            <div class='input'>
+                <div class="image_main">
+                    <img id='image' src='./images/airplanepng.png' alt='' crossorigin="anonymous">
+                </div>
+                <div class='image_select'>
+                    <ul>
+                        <li id="item1">
+                            <img src="./images/airplanepng.png" crossorigin="anonymous" alt="" class="image_selected">
+                        </li>
+                        <li id="item2">
+                            <img src="./images/himawari.jpg" crossorigin="anonymous" alt="">
+                        </li>
+                        <li id="item3">
+                            <img src="./images/karasu.jpg" crossorigin="anonymous" alt="">
+                        </li>
+                        <li id="item4">
+                            <label>
+                                <p>drop image.</p>
+                                <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png ">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='output'>
+                <!-- <h2>Image classification using MobileNet</h2> -->
+                <div id='container' style='width:100%; height:100%;'></div>
+            </div>
+        </div>
+    </div>
+
+    <script src='./js/main.js'></script>
+</body>
+
+</html>

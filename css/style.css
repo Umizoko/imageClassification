@@ -1,0 +1,122 @@
+@charset 'utf-8';
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image_main {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 25px 0;
+}
+
+.image_main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image_select {
+    width: 100%;
+    height: 100px;
+}
+
+.image_select ul {
+    padding: 0;
+    margin: 0;
+}
+
+.image_select ul li {
+    width: 25%;
+    overflow-y: hidden;
+}
+
+.image_select ul li img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.image_select ul li img:hover {
+    opacity: 0.9;
+}
+
+.image_select ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.image_selected {
+    opacity: 1 !important;
+}
+
+input {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#item4 {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+#item4 label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    background: #ddd;
+    opacity: 0.8;
+}
+
+#item4 label:hover {
+    opacity: 0.9;
+}
+
+#item4 label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output {
+    height: 300px;
+    width: 45%;
+    padding: 0 10px;
+}
+
+.output h2 {
+    margin-top: 0;
+}
