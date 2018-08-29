@@ -1,6 +1,6 @@
 # Image Classification 
 
-概要:1行
+画像を分類するwebサイト
 
 ![image](screenshot/screenshot.png)
 
@@ -9,7 +9,7 @@
 詳細:3行
 アピールポイント
 
-website: [https://umizoko.github.io/imageClassification/]()
+website: [https://umizoko.github.io/imageClassification/](https://umizoko.github.io/imageClassification/)
 
 ## Requirement
 - ml5.js
